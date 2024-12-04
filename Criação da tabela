@@ -1,0 +1,17 @@
+-- Criação da tabela
+CREATE TABLE Produtos (
+    ID INT PRIMARY KEY,
+    Nome VARCHAR(100),
+    Preco DECIMAL(10, 2),
+    Quantidade INT
+);
+
+-- Inserção de dados
+INSERT INTO Produtos (ID, Nome, Preco, Quantidade)
+VALUES
+(1, 'Notebook', 3500.00, 10),
+(2, 'Mouse', 50.00, 150),
+(3, 'Teclado', 100.00, 75);
+
+-- Consulta de dados
+SELECT * FROM Produtos;
